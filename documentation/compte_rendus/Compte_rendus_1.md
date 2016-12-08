@@ -5,42 +5,42 @@ quelque questions :
 
 ## Questions:
 
-- * Le serveur doit-il générer une page web ou l'application doit-elle gérer tout l'affichage ? *
+- *Le serveur doit-il générer une page web ou l'application doit-elle gérer tout l'affichage ?*
 
-** Il faudrait un affichage sur chacun des deux écrans **
+**Il faudrait un affichage sur chacun des deux écrans**
 
-- * Non-Homologué, peut-on avoir un définition ? *
+- *Non-Homologué, peut-on avoir un définition ?*
 
-** On cherche des véhicules trop bruyant, on considère que ce sont surtout des véhicules non-homologué. **
+**On cherche des véhicules trop bruyant, on considère que ce sont surtout des véhicules non-homologué.**
 
-- * Peut-on avoir des téléphones de tests ? Un server ? Un véhicule de test ? *
+- *Peut-on avoir des téléphones de tests ? Un server ? Un véhicule de test ?*
 
-** Je pourrait surement vous trouver quelques vieux téléphones et un serveur en interne **
+**Je pourrait surement vous trouver quelques vieux téléphones et un serveur en interne**
 
-- * Un accès externe au serveur ? *
+- *Un accès externe au serveur ?*
 
-** On verras si le CRI est d'accord. **
+**On verras si le CRI est d'accord.**
 
-- * Vous avez des préférences au niveau design ? *
+- *Vous avez des préférences au niveau design ?*
 
-** Non aucune **
+**Non aucune**
 
-- * Peut-on poster l'application sur github ? *
+- *Peut-on poster l'application sur github ?*
 
-** Oui aucun problème **.
+**Oui aucun problème**.
 
-- * Quelle données peut-on demander à l'utilisateur ? *
+- *Quelle données peut-on demander à l'utilisateur ?*
 
-** Tout ce dont vous pouvez avoir besoin **
+**Tout ce dont vous pouvez avoir besoin**
 
-- * Les documents que l'on doit vous fournir ? *
+- *Les documents que l'on doit vous fournir ?*
 
-** Un cahier des charges simple **
+**Un cahier des charges simple**
 
-- * Un utilisateur peut-il "rembobiner" la carte ? *
+- *Un utilisateur peut-il "rembobiner" la carte ?*
 
-** Ce serait interessant **
+**Ce serait interessant**
 
-- * Peut-on avoir des exemples de son que l'on devrait détecter ? *
+- *Peut-on avoir des exemples de son que l'on devrait détecter ?*
 
-** YouTube **
+**YouTube**
