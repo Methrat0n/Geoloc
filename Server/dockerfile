@@ -1,0 +1,12 @@
+FROM rethinkdb
+MAINTAINER merlin
+
+COPY create_db.sh /home/rethinkdb/
+RUN chmod +x /home/rethinkdb/create_db.sh
+RUN /home/rethinkdb/create_db.sh
+
+EXPOSE 8080
+EXPOSE 28015
+EXPOSE 29015
+
+CMD ["rethinkdb", "--bind", "all"]
