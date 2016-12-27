@@ -12,6 +12,8 @@ docker-compose up
 
 It will bring to life the needed database and start the web server. For more details on each one look in their respective directories.
 
+Obviously you need to have [Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/) and [Docker-Compose](https://docs.docker.com/compose/install/) install and runnig in you machine, as up-to-date as possible.
+
 #### android:
 
 Clone the repo and go to the AndroidApp directory.

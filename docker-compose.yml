@@ -6,9 +6,9 @@ services:
     volumes:
       - ./Server/data/:/data
     ports:
-      - "8000:8080"
-      - "28015:28015"
-      - "29015:29015"
+      - "8000:8080" # WebUI must be comment on prod
+      - "28015:28015" # Request port, do not comment
+      - "29015:29015" # Cluster port, can be comment if not nedded
 
   #When thibault's ready, lauch the web page
   #nodejs:
