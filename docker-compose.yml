@@ -1,0 +1,30 @@
+
+version: '2'
+services:
+  db:
+    build: Server
+    volumes:
+      - ./Server/data/:/data
+    ports:
+      - "8000:8080" # WebUI must be comment on prod
+      - "28015:28015" # Request port, do not comment
+      - "29015:29015" # Cluster port, can be comment if not nedded
+
+  #When thibault's ready, lauch the web page
+  #nodejs:
+    #build: WebApp
+    #volumes:
+      #- ./WebApp/ Depends on node configuration and usage
+    #ports:
+      #"8080:80" Dev config, should change in prod
+
+  #Later we should use this as front server
+  #nginx:
+    #build: nginx
+    #volumes: Need some configuration here
+    #ports:
+      #- "8080:80"
+      #- "4443:443"
+    #depends_on:
+      # -db
+      # -nodejs
