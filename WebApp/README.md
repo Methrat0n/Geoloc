@@ -2,7 +2,7 @@
 
 ~~~bash
 git clone repo
-cd repo/WebApp
+cd Geoloc/WebApp/geoloc-app
 npm install
 npm start
 ~~~
