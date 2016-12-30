@@ -3,8 +3,8 @@
 ~~~bash
 git clone repo
 cd repo/WebApp
-docker build -t testName .
-docker run -v $PWD/geoloc-app:/home/geoloc/geoloc-app -p 8000:3000 testName
+docker build -t testname .
+docker run -v $PWD/geoloc-app:/home/geoloc/geoloc-app -p 8000:3000 testname
 ~~~
 
 Then go to localhost:8000 in a browser
@@ -14,14 +14,14 @@ Then go to localhost:8000 in a browser
 To launch the web application, begin by cloning that repo.
 You can then go to this same directory and do
 ~~~bash
-docker build -t someName .
+docker build -t somename .
 ~~~
 
 Docker will create an image of the dockerfile and prepare all we need.
 When this is finish you can run the newly created image by doing
 
 ~~~bash
-docker run -v $PWD/geoloc-app:/home/geoloc/geoloc-app -p 8000:3000 SomeName
+docker run -v $PWD/geoloc-app:/home/geoloc/geoloc-app -p 8000:3000 somename
 ~~~
 
 It will take time, downloading all the dependancies, and then will finish. To do that, you obvisouly need [Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/) as up-to-date as possible.
