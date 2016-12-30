@@ -37,3 +37,4 @@ For more please read the README in the project directory
 
 ###Best pratice :
 Unless you realy need it, the docker-compose file in the root directory should work out of the box. Be sure to know what your doing.
+
