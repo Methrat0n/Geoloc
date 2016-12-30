@@ -1,6 +1,6 @@
 FROM node:6.9
 MAINTAINER merlin
-EXPOSE 80
+EXPOSE 3000
 
 RUN useradd -m geoloc -d /home/geoloc
 
