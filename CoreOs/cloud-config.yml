@@ -1,0 +1,21 @@
+#cloud-config
+users:
+  - name: "geoloc"
+    passwd: "$1$zQdAoMSx$Y88DflgYJm.mjTIXDJkSf0"
+    groups:
+      - "sudo"
+      - "docker"
+    ssh-authorized-keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEF4yO+tMY6Cw5gsqJMZqpFDvvprt9oB6kIoHTs9v2l7V99xAUnFKljRDD0er4JxizcD3/PlTubGYb+7J7Og5NYPE0c93ChUbwVgPAzsxyCBE8X67/nR+breD4a9hljrxom5K9QBbFXU3tul4uyUgnEzVidDi+VyEPHY2glsJFXOaRxnlAtKmvEohf0NEP8y2gIhOuEHvNM+YBk6H2ekIQWS80stxt6RHS0dZxc9ridShMA8IbrxHGQPZw4JKD9meR6xubFppCOEKzPSzL9PFLrUqwl65YcJftPza3gzJm9wo0o8Lwr87iwUaDTJBYDgvaBFIzrrXarCnPxFhjm+uV"
+coreos:
+  etcd:
+    discovery: https://discovery.etcd.io/d022ca38152e09e8e421ed676bf683c5
+    addr: $private_ipv4:4001
+    peer-addr: $private_ipv4:7001
+    peer-election-timeout: 3000
+    peer-heartbeat-interval: 600
+  units:
+    - name: etcd.service
+      command: start
+    - name: fleet.service
+      command: start
