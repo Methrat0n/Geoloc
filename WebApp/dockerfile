@@ -1,0 +1,13 @@
+FROM node:6.9
+MAINTAINER merlin
+EXPOSE 3000
+
+RUN useradd -m geoloc -d /home/geoloc
+
+#USER geoloc
+WORKDIR /home/geoloc/geoloc-app
+
+VOLUME /home/geoloc/geoloc-app
+#RUN chown -R /home/geoloc/geoloc-app for prod
+
+CMD ["sh","-c","npm install ; npm start"]
