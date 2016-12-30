@@ -14,4 +14,4 @@ RUN apt-get update -q \
 
 WORKDIR /app
 ENTRYPOINT ["/usr/local/bin/docker-compose"]
-CMD ["docker-compose","up"]
+CMD ["up"]
