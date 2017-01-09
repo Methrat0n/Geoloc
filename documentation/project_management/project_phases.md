@@ -1,17 +1,17 @@
-Project Phases :
+###Project Phases :
 
-1 - Definition of the architecture of the project
-2 - Creation of the micro-service architecture
-3 - Installation of the library and tools
-4 - Web UI
-5 - Conception and Implementation of the Database
-6 - Android's UI
-7 - Sound Analysis on Android
-8 - Android and Web connection to the Database
-9 - Fingerprinting the sound
-10 - Render Informations on UI
-11 - Add parameter's to the UI
-12 - Fonctionnal Tests
+* 1 Definition of the architecture of the project
+* 2 - Creation of the micro-service architecture
+* 3 - Installation of the library and tools
+* 4 - Web UI
+* 5 - Conception and Implementation of the Database
+* 6 - Android's UI
+* 7 - Sound Analysis on Android
+* 8 - Android and Web connection to the Database
+* 9 - Fingerprinting the sound
+* 10 - Render Informations on UI
+* 11 - Add parameter's to the UI
+* 12 - Fonctionnal Tests
 
 
 **1 - Definition of the architecture of the project**
