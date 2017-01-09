@@ -2,14 +2,14 @@
 version: '2'
 services:
   db:
-    build: Server
+    build: Database
     volumes:
-      - ./Server/data/:/data
+      - ./Database/data/:/data
     ports:
       - "8000:8080" # WebUI must be comment on prod
       - "28015:28015" # Request port, do not comment
       - "29015:29015" # Cluster port, can be comment if not nedded
-
+  
   #Web Page
   nodejs:
     build: WebApp
