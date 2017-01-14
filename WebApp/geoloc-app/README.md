@@ -45,3 +45,9 @@ Then we launch async affectation. This method is automaticaly launch at the comp
     );
 ~~~
 Finaly, we render our value or do anything with them. If you're quick you may see that the places of the variables are, in the beginning, empty.
+
+To use this featured in Chrome we need to activate the HTTPS, so to do so in express :
+~~~bash
+HTTPS=true npm start
+~~~
+That's only for dev purpose, on production-ish server a reverse proxy should be use.
