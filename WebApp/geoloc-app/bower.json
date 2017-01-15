@@ -1,6 +1,7 @@
 {
   "name": "polymer-project",
   "dependencies": {
-    "google-map": "GoogleWebComponents/google-map#^1.0.0"
+    "google-map": "GoogleWebComponents/google-map#^1.0.0",
+    "paper-slider": "PolymerElements/paper-slider#^1.0.0"
   }
 }

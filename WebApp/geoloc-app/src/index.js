@@ -1,11 +1,8 @@
-import reactPolymer from 'react-polymer';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-reactPolymer.registerAttribute('google-map');
-
 ReactDOM.render(
-  <App />,
+  <App/>,
   document.getElementById('root')
 );
