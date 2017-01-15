@@ -1,0 +1,6 @@
+{
+  "name": "polymer-project",
+  "dependencies": {
+    "google-map": "GoogleWebComponents/google-map#^1.0.0"
+  }
+}
