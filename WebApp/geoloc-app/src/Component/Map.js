@@ -12,8 +12,8 @@ class Map extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            latitude: null,
-            longitude: null,
+            latitude: 59.938043,   //Some location
+            longitude: 30.337157,
         }
     }
 
