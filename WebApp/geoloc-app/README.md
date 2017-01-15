@@ -1,5 +1,10 @@
 ##Web App implementation
 
+###Libraries:
+
+To devellop this webApp we've use [NodeJs](https://nodejs.org/en/) as server, [React](https://facebook.github.io/react/) as view handler, the first version of the project was created using [create-react-app](https://github.com/facebookincubator/create-react-app), and the rendering is do using [google-map API V3](https://developers.google.com/maps/?hl=fr) over [react-google-map](https://github.com/istarkov/google-map-react) and [Polymer](https://www.polymer-project.org/1.0/).
+
+###Model :
 ####The geolocalisation class
 
 This class is aimed to ease the use of the geolocalisation feature of HTML5. You can read it if you want be it's quite simple realy.
@@ -51,3 +56,21 @@ To use this featured in Chrome we need to activate the HTTPS, so to do so in exp
 HTTPS=true npm start
 ~~~
 That's only for dev purpose, on production-ish server a reverse proxy should be use.
+
+###Components :
+####The Map component
+
+The Map component use [react-google-map](https://github.com/istarkov/google-map-react) to provide us with a simpler implementation of google maps in react.
+
+The Component itself extends *PureComponent* instead of *Component* to make sure the render method is a pure one, that evoid a lot of trouble with map.
+
+The logic in the class is simple : we use Geolocalisation to know where we are and then we launch the map center in that point with a zoom that we estime a good one.
+
+The only important thing to note here is there is a misunderstading between react and map, so it's quite difficulte to get it to work. If you use our code, the only remaining problem is that the map need an **height** style attribute, and it need that all its parents have an height too.
+
+To ease that, we have write a simple style object that you use like this :
+~~~EC6
+import style from './style';
+...
+<div style={style}>... <div>
+~~~
