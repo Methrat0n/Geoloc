@@ -2,14 +2,17 @@
 version: '2'
 services:
   db:
-    build: Database
+    build: Server
     volumes:
-      - ./Database/data/:/data
+      - /home/merlin/dev/Geoloc/Server/data/:/var/lib/postgresql/data
     ports:
-      - "8000:8080" # WebUI must be comment on prod
-      - "28015:28015" # Request port, do not comment
-      - "29015:29015" # Cluster port, can be comment if not nedded
-  
+      - "5432:5432" #Database port, cannot be commented
+    environment:
+      - POSTGRES_USER="geoloc"
+      - POSTGRES_PASSWORD="geoloc"
+      - PGDATA="/var/lib/postgresql/data"
+      - POSTGRES_INITDB_ARGS="--data-checksums"
+
   #Web Page
   nodejs:
     build: WebApp

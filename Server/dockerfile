@@ -1,12 +1,11 @@
-FROM rethinkdb
+FROM postgres
 MAINTAINER merlin
 
-COPY create_db.sh /home/rethinkdb/
-RUN chmod +x /home/rethinkdb/create_db.sh
-RUN /home/rethinkdb/create_db.sh
+RUN apt-get update && \
+    apt-get upgrade
 
-EXPOSE 8080
-EXPOSE 28015
-EXPOSE 29015
+COPY create_db.sql /docker-entrypoint-initdb.d
 
-CMD ["rethinkdb", "--bind", "all"]
+VOLUME /var/lib/postgresql/data
+
+EXPOSE 5432
