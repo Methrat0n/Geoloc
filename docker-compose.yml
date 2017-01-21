@@ -4,7 +4,7 @@ services:
   db:
     build: Server
     volumes:
-      - /home/merlin/dev/Geoloc/Server/data/:/var/lib/postgresql/data
+      - ./Server/data/:/var/lib/postgresql/data
     ports:
       - "5432:5432" #Database port, cannot be commented
     environment:
