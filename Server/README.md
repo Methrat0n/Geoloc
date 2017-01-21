@@ -1,13 +1,11 @@
-## Database with RethinkDB
+## Database with postgreSQL
 
 This directory contain the definition of the database and her creation. By this, I mean that the dockerfile actualy in this directory create the database service, you can try it by doing :
 
 ~~~bash
 docker build . -t db
-docker run db -p "8000:8080"
+docker run db -p "5432:5432"
 ~~~
-
-Then, go to localhost:8000, you'll see the admin panel of the database.
 
 The creation itself of the database is done be executing the create_db.sh in the dockerfile. So, when tou actualy run the container, the database should be create as you defined it.
 
