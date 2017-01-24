@@ -30,8 +30,10 @@ app.get('/db/', (request, response) => {
     }
 
     const executeRequest = require('./server/Request.js').default;
-    const id = JSON.parse(param).id;
-    const requestResponse = executeRequest(id);
+    const obj = JSON.parse(param).id;
+    const id = obj.id;
+    const params = obj.params;
+    const requestResponse = executeRequest(id, params);
     if(typeof requestResponse === 'undefined')
         response.json({answer : "work but anwser empty"});
     else

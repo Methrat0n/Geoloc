@@ -17,11 +17,14 @@ const dblink = new Sequelize('postgres', 'postgres', 'postgres',{
     },
 });
 
+let parameters = {};
+
 const requests = [
     "doThings","doOtherThings","testDatabase()",
 ];
 
-function executeRequest(id) {
+function executeRequest(id, params) {
+    parameters = params;
     eval(requests[id]);
 }
 
