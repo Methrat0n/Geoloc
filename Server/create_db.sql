@@ -29,7 +29,7 @@ GRANT CONNECT ON DATABASE Geoloc TO datauser;
 --Création des tables
 DROP TABLE  IF EXISTS signal;
 DROP TABLE  IF EXISTS device;
-DROP TABLE  IF EXISTs device_table;
+DROP TABLE  IF EXISTs device_type;
 DROP TABLE  IF EXISTS vehicule;
 DROP TABLE  IF EXISTS vehicule_type;
 
